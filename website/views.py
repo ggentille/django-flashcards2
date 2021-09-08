@@ -140,7 +140,7 @@ def divide(request):
 			'num_2':num_2,
 			})
 
-		correct_answer = float(old_num_1) / float(old_num_2)
+		correct_answer = round(float(old_num_1) / float(old_num_2),3)
 		if float(answer) == correct_answer:
 			my_answer = "Correct!  " + old_num_1 + " / " + old_num_2 + " = " + answer
 			color = "success" 
